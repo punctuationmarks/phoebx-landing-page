@@ -1,0 +1,140 @@
+{
+  "Header": {
+    "title": "Community focused computer science",
+    "paragraph": "We are a development shop that focuses on local communities, individuals and businesses. We have experience in industries ranging from retail and restuarants to farming and construction, so we know how to address your needs."
+  },
+  "About": {
+    "paragraph": "We're a small locally owned development shop. We are community focused and aim to help our local community and yours. We believe that 'quality is not an act, but a habit' and we aim to keep that truism in our development, our business and our social relations.",
+    "techStack": [
+      "JavaScript",
+      "Node.js",
+      "React.js",
+      "React Native (Android and iOS)",
+      "D3.js"
+    ],
+    "techStack1": [
+      "Python",
+      "Django",
+      "Flask",
+      "Numpy",
+      "Pandas",
+      "Matplotlib",
+      "Tensorflow"
+    ],
+    "techStack2": ["R", "Tidyverse", "Shiny"]
+  },
+  "Services": [
+    {
+      "icon": "fa fa-terminal",
+      "name": "We live code",
+      "text": "We live and breath code, not just because it's awesome - but because it can help solve so many of our day to day problems."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "We live in the cloud",
+      "text": "We understand you want your data asap and you want your data secure. We follow all current encryption standards and best practices when dealing with the cloud."
+    },
+    {
+      "icon": "fa fa-language",
+      "name": "We are obsessed with learning",
+      "text": "We're focused in tech, so if we don't know how to do something, we can learn it ourselves or reach out to our extensive network to make sure you get what you."
+    },
+
+    {
+      "icon": "fa fa-group",
+      "name": "We are focused on your local community",
+      "text": "Community is what makes or breaks any endeavor. We aren't looking to build something that isn't needed or that won't be supported by your local commuinity, so we're iron out all those important details before we ever start to code."
+    },
+    {
+      "icon": "fa fa-database",
+      "name": "We understand data is the new currency",
+      "text": "Data can be more valuable than oil and gold, but only if handled right. We focus on getting the insights you need to utilize your data to its maximum potential."
+    },
+    {
+      "icon": "fa fa-umbrella",
+      "name": "We're diverse",
+      "text": "We have experience in everything from the pharmaceutical industry, to restaurants, to healthcare, to farming and more. We know where you're coming from because we've been there."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "Downtown Indianapolis, IN ",
+    "phone": "+1 317-six oh six - 2369",
+    "email": "info@phoebx.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-gears",
+      "title": "Tried and True Technology",
+      "text": "Always learning, but not trying to re-invent the wheel."
+    },
+    {
+      "icon": "fa fa-phone-square",
+      "title": "Mobile First",
+      "text": "Mobile internet use is over 50% of all internet traffic and that will only rise with 5G."
+    },
+    {
+      "icon": "fa fa-wrench",
+      "title": "Strong and Maintained",
+      "text": "We build our apps to last and we also maintain them to make sure they're up-to-date with the latest security patches."
+    },
+    {
+      "icon": "fa fa-tasks",
+      "title": "Accessibility Focused",
+      "text": "We want to make the internet a place for everyone to be able to use with ease"
+    }
+  ]
+}
