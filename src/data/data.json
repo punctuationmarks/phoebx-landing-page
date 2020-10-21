@@ -23,6 +23,11 @@
     ],
     "techStack2": ["R", "Tidyverse", "Shiny"]
   },
+  "Contact": {
+    "address": "Downtown Indianapolis, IN ",
+    "phone": "+1 317-six oh six - 2369",
+    "email": "contact@phoebx.com"
+  },
   "Services": [
     {
       "icon": "fa fa-terminal",
@@ -110,11 +115,6 @@
       "job": "Project Manager"
     }
   ],
-  "Contact": {
-    "address": "Downtown Indianapolis, IN ",
-    "phone": "+1 317-six oh six - 2369",
-    "email": "info@phoebx.com"
-  },
   "Features": [
     {
       "icon": "fa fa-gears",
