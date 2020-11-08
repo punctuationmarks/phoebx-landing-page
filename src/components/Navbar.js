@@ -7,7 +7,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
+  // NavLink,
 } from "reactstrap";
 import LinkComponent from "./LinkComponent";
 import { ReactComponent as ScanIcon } from "../assets/images/scan.svg";
