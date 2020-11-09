@@ -13,16 +13,17 @@ export default function Header(props) {
 const styles = {
   container: {
     alignItems: "center",
-    backgroundColor: "#44bd5450",
+    backgroundColor: "#2e7c3870",
     display: "flex",
     justifyContent: "center",
     margin: "0 0.75rem",
     minHeight: "85vh",
   },
   body: {
-    color: "rgb(0, 0, 10)",
-    fontSize: "calc(1.5rem + 2vmin)",
+    color: "rgb(225, 225, 225)",
+    fontSize: "calc(1.6rem + 2vmin)",
     padding: "0 0.25rem",
-    textShadow: "2px 3px rgb(225, 225, 225)",
+    textShadow: "1px 1px rgba(0, 0, 0, 0.8)",
+    
   },
 };

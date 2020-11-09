@@ -1,13 +1,12 @@
 html {
   font-family: Georgia, "Times New Roman", Times, serif !important;
-}
-
-.main {
-  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .App-logo {
-  height: 5vmin;
+  /* height: 5vmin; */
+  
   pointer-events: none;
 }
 
@@ -26,7 +25,12 @@ html {
   }
 }
 
+
+
 .App-header-background {
   background: center no-repeat url("./assets/images/green-pink-leaves.jpg");
   min-height: 85vh;
+  /* color: #2e7c3870; */
+  /* color: rgba(83, 134, 143, 0.685); */
+  color: rgb(100, 14, 100);
 }
