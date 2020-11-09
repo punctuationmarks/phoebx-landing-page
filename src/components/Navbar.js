@@ -21,8 +21,8 @@ export default function NavbarComponent(props) {
     <div>
       <Navbar color="faded" light>
         <NavbarBrand href="/" className="mr-auto">
-          <ScanIcon className="App-logo" alt="logo" />
-          Phoebx
+          <ScanIcon className="App-logo" alt="logo" /> 
+          {" "} Phoebx
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>

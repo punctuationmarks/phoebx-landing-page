@@ -41,5 +41,4 @@ const styles = {
   header:{
     justifyContent: "left"
   }
-
 };

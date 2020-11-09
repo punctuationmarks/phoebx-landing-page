@@ -1,12 +1,12 @@
 html {
-  font-family: Georgia, "Times New Roman", Times, serif !important;
   width: 100%;
   overflow-x: hidden;
 }
 
-.App-logo {
-  /* height: 5vmin; */
-  
+body{
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+}
+.App-logo {  
   pointer-events: none;
 }
 
@@ -32,5 +32,5 @@ html {
   min-height: 85vh;
   /* color: #2e7c3870; */
   /* color: rgba(83, 134, 143, 0.685); */
-  color: rgb(100, 14, 100);
+  /* color: rgb(100, 14, 100); */
 }

@@ -21,9 +21,8 @@ const styles = {
   },
   body: {
     color: "rgb(225, 225, 225)",
-    fontSize: "calc(1.6rem + 2vmin)",
+    fontSize: "calc(2rem + 2vmin)",
     padding: "0 0.25rem",
     textShadow: "1px 1px rgba(0, 0, 0, 0.8)",
-    
   },
 };
