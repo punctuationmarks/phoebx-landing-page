@@ -9,8 +9,8 @@ import {
   Container,
   Form,
   FormGroup,
-  FormText,
-  Label,
+//   FormText,
+//   Label,
   Input,
 } from "reactstrap";
 
