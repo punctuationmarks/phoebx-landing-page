@@ -2,7 +2,7 @@ import "./App.css";
 import NavBar from "./components/Navbar";
 import Services from "./sections/Services";
 import Header from "./sections/Header";
-import Contact from "./sections/Contact";
+import ContactForm from "./sections/ContactForm";
 import Footer from "./sections/Footer";
 
 export default function App() {
@@ -11,7 +11,7 @@ export default function App() {
       <NavBar />
       <Header />
       <Services />
-      <Contact />
+      <ContactForm />
       <Footer />
     </div>
   );
