@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg"  width="34" height="34"  fill="none" viewBox="0 0 637 359">
+  <g pacity=".75">
+    <path stroke="currentColor" stroke-linejoin="bevel" stroke-width="18" d="M9.5 5.022l-2.991 345"/>
+  </g>
+  <g pacity=".75">
+    <path stroke="currentColor" stroke-width="18"  stroke-linejoin="bevel" d="M61 2.5h295"/>
+  </g>
+  <g pacity=".75">
+    <path stroke="currentColor" stroke-width="18"  stroke-linejoin="bevel" d="M226.5 35.008l-1 315"/>
+  </g>
+  <g pacity=".75">
+    <path stroke="currentColor" stroke-width="18"  stroke-linejoin="bevel" d="M396 2.5h232"/>
+  </g>
+  <g pacity=".75">
+    <path stroke="currentColor" stroke-linejoin="bevel" stroke-width="18" d="M630.5 35v315"/>
+  </g>
+
+</svg>

@@ -10,8 +10,8 @@ import {
   // NavLink,
 } from "reactstrap";
 import LinkComponent from "./LinkComponent";
-import { ReactComponent as ScanIcon } from "../assets/images/scan.svg";
-
+// import { ReactComponent as ScanIcon } from "../assets/images/scan.svg";
+import { ReactComponent as Logo } from "../assets/images/phoebx-logo-beta.svg";
 export default function NavbarComponent(props) {
   const [collapsed, setCollapsed] = useState(true);
 
@@ -21,7 +21,7 @@ export default function NavbarComponent(props) {
     <div>
       <Navbar color="faded" light>
         <NavbarBrand href="/" className="mr-auto">
-          <ScanIcon className="App-logo" alt="logo" /> 
+          <Logo color="black" alt="logo" /> 
           {" "} Phoebx
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />

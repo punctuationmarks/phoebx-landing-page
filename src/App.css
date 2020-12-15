@@ -6,7 +6,7 @@ html {
 body{
   font-family: Georgia, "Times New Roman", Times, serif !important;
 }
-.App-logo {  
+/* .App-logo {  
   pointer-events: none;
 }
 
@@ -23,7 +23,7 @@ body{
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 
 
