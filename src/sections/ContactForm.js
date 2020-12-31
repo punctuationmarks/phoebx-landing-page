@@ -36,10 +36,14 @@ export default class MyForm extends React.Component {
             <FormGroup style={styles.submitButtons}>
               {status === "SUCCESS" ? <></> : <Button>submit the form</Button>}
               {status === "ERROR" && (
-                <h4>Ooops! There was an error, wanna try again?</h4>
+                <h4 style={styles.oops}>
+                  Ooops! There was an error, wanna try again?
+                </h4>
               )}
               {status === "SUCCESS" ? (
-                <h4>Thanks!</h4>
+                <GlitchClip>
+                  <h4>Thanks!</h4>
+                </GlitchClip>
               ) : (
                 <Button>submit the form</Button>
               )}
@@ -86,18 +90,17 @@ const styles = {
   },
   body: {
     alignItems: "center",
-    // color: "rgb(225, 225, 225)",
-
     textShadow: "1px 1px rgba(0, 0, 0, 0.4)",
     display: "flex",
     flexDirection: "column",
-    // fontSize: "calc(1.5rem + 2vmin)",
     justifyContent: "center",
     padding: "0 0.25rem",
-    // textShadow: "1px 1px rgba(0, 0, 0, 0.4)",
   },
   submitButtons: {
     display: "flex",
     justifyContent: "space-between",
+  },
+  oops: {
+    padding: "2rem 1rem",
   },
 };
