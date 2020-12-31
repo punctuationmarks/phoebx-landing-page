@@ -3,15 +3,15 @@
 // Finally, add a <MyForm/> element whereever you wish to display the form.
 
 import React from "react";
-import GlitchText from "../components/GitchText"
+import GlitchClip from "react-glitch-effect/core/Clip";
 
 import {
   Button,
   Container,
   Form,
   FormGroup,
-//   FormText,
-//   Label,
+  //   FormText,
+  //   Label,
   Input,
 } from "reactstrap";
 
@@ -28,23 +28,30 @@ export default class MyForm extends React.Component {
     const { status } = this.state;
     return (
       <Container id="contact" fluid={true} style={styles.container}>
-        <h3>Send us a <GlitchText>message</GlitchText> :</h3>
         <Container>
-        <Form
-          onSubmit={this.submitForm}
-          action="https://formspree.io/f/mdopwyld"
-          method="POST"
-        >
-          <FormGroup style={styles.body}>
-            <Input type="email" name="email" placeholder="Your email"/>
-            <Input type="textarea" name="message" placeholder="Your message" />
-            
-          </FormGroup>
-          <FormGroup>
-            {status === "SUCCESS" ? <p>Thanks!</p> : <Button>Submit</Button>}
-            {status === "ERROR" && <p>Ooops! There was an error.</p>}
+          <h2 style={styles.header}>
+            Send us<GlitchClip onHover> a message</GlitchClip> :
+          </h2>
+
+          <Form
+            onSubmit={this.submitForm}
+            action="https://formspree.io/f/mdopwyld"
+            method="POST"
+          >
+            <FormGroup style={styles.body}>
+              <Input type="email" name="email" placeholder="Your email" />
+              <Input
+                type="textarea"
+                name="message"
+                placeholder="Your message"
+              />
             </FormGroup>
-        </Form>
+            <FormGroup style={styles.submitButtons}>
+              {status === "SUCCESS" ? <></> : <Button>submit the form</Button>}
+              {status === "ERROR" && <h4>Ooops! There was an error, wanna try again?</h4>}
+              {status === "SUCCESS" ? <h4>Thanks!</h4> : <Button>submit the form</Button>}
+            </FormGroup>
+          </Form>
         </Container>
       </Container>
     );
@@ -71,26 +78,22 @@ export default class MyForm extends React.Component {
 }
 
 const styles = {
+  header: {
+    alignItems: "center",
+    textAlign: "center",
+  },
   container: {
     alignItems: "center",
-    backgroundColor: "#2e7c3870",
-    // "#2e7c38c2",
-
+    // color: "rgb(225, 225, 225)",
     display: "flex",
-    // justifyContent: "center",
-    // margin: "0 1.25rem",
-
     minHeight: "10vh",
     padding: "0.4rem 0.4rem",
 
-    color: "rgb(225, 225, 225)",
-
     textShadow: "1px 1px rgba(0, 0, 0, 0.4)",
-    // width: "25%"
   },
   body: {
     alignItems: "center",
-    color: "rgb(225, 225, 225)",
+    // color: "rgb(225, 225, 225)",
 
     textShadow: "1px 1px rgba(0, 0, 0, 0.4)",
     display: "flex",
@@ -100,4 +103,9 @@ const styles = {
     padding: "0 0.25rem",
     // textShadow: "1px 1px rgba(0, 0, 0, 0.4)",
   },
+  submitButtons:{
+    display: "flex",
+    justifyContent: "space-between"
+  }
+
 };

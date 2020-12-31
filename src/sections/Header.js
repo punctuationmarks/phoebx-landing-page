@@ -5,13 +5,14 @@ import { ReactComponent as TreeOverlook } from "../assets/images/tree-overlook.s
 export default function Header(props) {
   return (
     <>
-      <div className="first-page-background" style={styles.images}>
-        <h4>a technology consulting and creating company</h4>
-
+      <div id="first-page-background" style={styles.images}>
+        <h3 style={styles.catchPhrase} id="catch-phrase">
+          a logical, virtual and physical, tactile creation company
+        </h3>
         <header style={styles.container}>
-          <p style={styles.body}>
-            Where entrepreneurship meets community focus
-          </p>
+          <h3 style={styles.body}>
+            a logical, virtual and physical, tactile <br /> creation company
+          </h3>
         </header>
       </div>
     </>
@@ -27,9 +28,9 @@ const styles = {
     minHeight: "85vh",
   },
   body: {
-    color: "blanchedalmond",
-    fontSize: "calc(2rem + 2vmin)",
+    color: "#f3d2a0",
+    fontSize: "calc(1.65rem + 2vmin)",
     padding: "0 0.25rem",
-    textShadow: "2px 2px rgba(0, 0, 0, 0.4)",
+    textShadow: "2px 2px rgba(0, 0, 0, 0.8)",
   },
 };

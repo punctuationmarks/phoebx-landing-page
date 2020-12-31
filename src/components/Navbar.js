@@ -56,6 +56,6 @@ export default function NavbarComponent(props) {
 const styles = {
   navItem: {
     flexDirection: "row",
-    margin: "0 1rem 0 15%",
+    margin: "0 1rem 0 0",
   },
 };
