@@ -10,7 +10,6 @@ import {
   // NavLink,
 } from "reactstrap";
 import LinkComponent from "./LinkComponent";
-import { ReactComponent as ScanIcon } from "../assets/images/scan.svg";
 
 export default function NavbarComponent(props) {
   const [collapsed, setCollapsed] = useState(true);
@@ -18,25 +17,28 @@ export default function NavbarComponent(props) {
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <div>
+    <>
       <Navbar color="faded" light>
-        <NavbarBrand href="/" className="mr-auto">
-          <ScanIcon className="App-logo" alt="logo" /> 
-          {" "} Phoebx
+        <NavbarBrand href="/">
+          <h1>Phoebx</h1>
+          {/* <p className="bt-green">Phoebx</p> */}
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar style={styles.navItem}>
-            <NavItem style={styles.navItem}>
-              <LinkComponent link="#services" text="Services" />
+          <NavItem style={styles.navItem}>
+              <LinkComponent link="#about" text="#about" />
             </NavItem>
             <NavItem style={styles.navItem}>
-              <LinkComponent link="#contact" text="Contact" />
+              <LinkComponent link="#services" text="#services" />
+            </NavItem>
+            <NavItem style={styles.navItem}>
+              <LinkComponent link="#contact" text="#contact" />
             </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
-    </div>
+    </>
   );
 }
 

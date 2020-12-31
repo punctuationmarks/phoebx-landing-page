@@ -1,31 +1,44 @@
 html {
-  width: 100%;
   overflow-x: hidden;
+  width: 100%;
 }
 
-body{
-  font-family: Georgia, "Times New Roman", Times, serif !important;
-}
-.App-logo {  
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 8s linear;
-  }
+body {
+  background-color: #e5e5e5 !important; /* these overrides are because of bootstrap and not wantint to make a "shame.css" or some other override*/
+  font-family: Courier Prime !important;
+  font-style: normal !important;
+  /* overflow-x: hidden !important; */
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  /* PHOEBX */
+  width: 289px !important;
+  height: 37px !important;
+  left: 102px !important;
+  top: 59px !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 64px !important;
+  line-height: 30px !important;
+  /* or 33% */
+  color: #00ff0a;
 }
 
+ /* li items */
+.nav-item {
+  /* navbar */
+  width: 504px !important;
+  height: 33px !important;
+  left: 436px !important;
+  top: 59px !important;
+  font-weight: bold !important;
+  font-size: 36px;
+  line-height: 21px;
+  /* or 58% */
 
+  color: #ff00e5 !important;
+}
 
 .App-header-background {
   background: center no-repeat url("./assets/images/green-pink-leaves.jpg");

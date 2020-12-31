@@ -7,14 +7,12 @@ import Footer from "./sections/Footer";
 
 export default function App() {
   return (
-    <div style={styles.container}>
+    <>
       <NavBar />
       <Header />
       <Services />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
-
-const styles = { container: {} };
