@@ -1,7 +1,5 @@
 import React from "react";
-// import { Ocean, TreeOverlook } from "../assets/images/index";
-import { ReactComponent as Ocean } from "../assets/images/ocean.svg";
-import { ReactComponent as TreeOverlook } from "../assets/images/tree-overlook.svg";
+
 export default function Header(props) {
   return (
     <>

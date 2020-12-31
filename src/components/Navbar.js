@@ -1,18 +1,15 @@
 import React, { useState } from "react";
+import GlitchClip from "react-glitch-effect/core/Clip";
 import {
   Button,
   Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
   Nav,
-  NavItem,
-  // NavLink,
+  Navbar,
+  NavbarBrand,
+  NavItem
 } from "reactstrap";
-
-import GlitchClip from "react-glitch-effect/core/Clip";
-import LinkComponent from "./LinkComponent";
 import { ReactComponent as Dots } from "../assets/images/dots.svg";
+import LinkComponent from "./LinkComponent";
 
 export default function NavbarComponent(props) {
   const [collapsed, setCollapsed] = useState(true);

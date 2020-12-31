@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Card,
-  // Button,
-  CardImg,
-  CardTitle,
-  // CardText,
-  CardSubtitle,
-  CardBody,
-} from "reactstrap";
+import { Card, CardBody, CardImg, CardSubtitle, CardTitle } from "reactstrap";
 import LinkComponent from "./LinkComponent";
 
 export default function CardComponent(props) {

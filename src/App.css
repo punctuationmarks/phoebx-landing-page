@@ -71,14 +71,13 @@ h4 {
     width: 31.5rem !important;
     height: 1.9rem !important;
     left: 27.25rem !important;
-    top: 3.68rem!important;
+    top: 3.68rem !important;
     line-height: 1.315rem;
   }
   #first-page-background {
     background-image: url(../src/assets/images/ocean.svg),
-    url(../src/assets/images/inlet.svg),  
-    url(../src/assets/images/water-covered-tree.svg),
-      
+      url(../src/assets/images/inlet.svg),
+      url(../src/assets/images/water-covered-tree.svg),
       url(../src/assets/images/tree-overlook.svg);
     background-position: left top, center bottom, center, center right;
     background-repeat: no-repeat;
@@ -97,7 +96,6 @@ h4 {
 }
 
 @media only screen and (max-width: 799px) {
-  
   #first-page-background {
     background-image: url(../src/assets/images/ocean.svg),
       url(../src/assets/images/inlet.svg), url(../src/assets/images/inlet.svg);
@@ -115,7 +113,7 @@ h4 {
     margin: 0.5rem;
     padding: 0.5rem;
   }
-  #catch-phrase{
+  #catch-phrase {
     visibility: hidden;
   }
 }

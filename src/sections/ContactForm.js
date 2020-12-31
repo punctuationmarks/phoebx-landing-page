@@ -1,19 +1,6 @@
-// Customize this 'myform.js' script and add it to your JS bundle.
-// Then import it with 'import MyForm from "./myform.js"'.
-// Finally, add a <MyForm/> element whereever you wish to display the form.
-
 import React from "react";
 import GlitchClip from "react-glitch-effect/core/Clip";
-
-import {
-  Button,
-  Container,
-  Form,
-  FormGroup,
-  //   FormText,
-  //   Label,
-  Input,
-} from "reactstrap";
+import { Button, Container, Form, FormGroup, Input } from "reactstrap";
 
 export default class MyForm extends React.Component {
   constructor(props) {
@@ -48,8 +35,14 @@ export default class MyForm extends React.Component {
             </FormGroup>
             <FormGroup style={styles.submitButtons}>
               {status === "SUCCESS" ? <></> : <Button>submit the form</Button>}
-              {status === "ERROR" && <h4>Ooops! There was an error, wanna try again?</h4>}
-              {status === "SUCCESS" ? <h4>Thanks!</h4> : <Button>submit the form</Button>}
+              {status === "ERROR" && (
+                <h4>Ooops! There was an error, wanna try again?</h4>
+              )}
+              {status === "SUCCESS" ? (
+                <h4>Thanks!</h4>
+              ) : (
+                <Button>submit the form</Button>
+              )}
             </FormGroup>
           </Form>
         </Container>
@@ -103,9 +96,8 @@ const styles = {
     padding: "0 0.25rem",
     // textShadow: "1px 1px rgba(0, 0, 0, 0.4)",
   },
-  submitButtons:{
+  submitButtons: {
     display: "flex",
-    justifyContent: "space-between"
-  }
-
+    justifyContent: "space-between",
+  },
 };
