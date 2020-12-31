@@ -3,6 +3,7 @@
 // Finally, add a <MyForm/> element whereever you wish to display the form.
 
 import React from "react";
+import GlitchText from "../components/GitchText"
 
 import {
   Button,
@@ -27,7 +28,7 @@ export default class MyForm extends React.Component {
     const { status } = this.state;
     return (
       <Container id="contact" fluid={true} style={styles.container}>
-        <h3>Send us a message :</h3>
+        <h3>Send us a <GlitchText>message</GlitchText> :</h3>
         <Container>
         <Form
           onSubmit={this.submitForm}

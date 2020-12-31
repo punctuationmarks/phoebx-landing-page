@@ -1,11 +1,14 @@
 import React from "react";
 import { CardDeck } from "reactstrap";
 import CardComponent from "../components/CardComponent";
+import GlitchClip from "react-glitch-effect/core/Clip";
 
 export default function Example(props) {
   return (
     <div id="services" style={styles.container}>
-      <h2 style={styles.header}>We like to get our hands dirty in many different fields</h2>
+      <h2 style={styles.header}>
+        We like to get our hands dirty in many different fields
+      </h2>
       <CardDeck>
         <CardComponent
           cardTitle="Computer Technologies Consulting"
@@ -36,9 +39,9 @@ const styles = {
   container: {
     background: "rgba(120, 128, 121, 0.17)",
     margin: "0.5rem",
-    padding:  "0.5rem"
+    padding: "0.5rem",
   },
-  header:{
-    justifyContent: "left"
-  }
+  header: {
+    justifyContent: "left",
+  },
 };

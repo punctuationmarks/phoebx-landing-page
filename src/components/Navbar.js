@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import {
+  Button,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -9,27 +9,39 @@ import {
   NavItem,
   // NavLink,
 } from "reactstrap";
+
+import GlitchClip from "react-glitch-effect/core/Clip";
 import LinkComponent from "./LinkComponent";
+import { ReactComponent as Dots } from "../assets/images/dots.svg";
+
 export default function NavbarComponent(props) {
   const [collapsed, setCollapsed] = useState(true);
-
-  const toggleNavbar = () => setCollapsed(!collapsed);
+  const [glitchActive, setGlitchActive] = useState(true);
+  const toggleNavbar = () => {
+    setCollapsed(!collapsed);
+    setGlitchActive(!glitchActive);
+  };
 
   return (
     <>
       <Navbar color="faded" light>
-        <NavbarBrand href="/">
-          <h1>Phoebx</h1>
-          {/* <p className="bt-green">Phoebx</p> */}
+        <NavbarBrand onClick={toggleNavbar}>
+          <Button>
+            <h1>PHOEBX</h1>
+          </Button>
         </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <GlitchClip onHover={true}>
+          <Dots onClick={toggleNavbar} className="mr-2" />
+        </GlitchClip>
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar style={styles.navItem}>
-          <NavItem style={styles.navItem}>
+            <NavItem style={styles.navItem}>
               <LinkComponent link="#about" text="#about" />
             </NavItem>
             <NavItem style={styles.navItem}>
-              <LinkComponent link="#services" text="#services" />
+              <GlitchClip onHover>
+                <LinkComponent link="#services" text="#services" />
+              </GlitchClip>
             </NavItem>
             <NavItem style={styles.navItem}>
               <LinkComponent link="#contact" text="#contact" />
@@ -44,6 +56,6 @@ export default function NavbarComponent(props) {
 const styles = {
   navItem: {
     flexDirection: "row",
-    margin: "0 1rem 0 0",
+    margin: "0 1rem 0 15%",
   },
 };

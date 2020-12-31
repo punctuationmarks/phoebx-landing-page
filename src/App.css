@@ -5,6 +5,7 @@ html {
 
 body {
   background-color: #e5e5e5 !important; /* these overrides are because of bootstrap and not wantint to make a "shame.css" or some other override*/
+  color: blanchedalmond;
   font-family: Courier Prime !important;
   font-style: normal !important;
   /* overflow-x: hidden !important; */
@@ -22,11 +23,24 @@ h1 {
   font-size: 64px !important;
   line-height: 30px !important;
   /* or 33% */
-  color: #00ff0a;
+  /* color: #40b61c; */
+  color: #1cb636;
+  /* color: #d82c82d3 !important; */
+  /* color: burlywood; */
 }
 
- /* li items */
+.first-page-background {
+  background-image: url(../src/assets/images/ocean.svg),
+    url(../src/assets/images/tree-overlook.svg),
+    url(../src/assets/images/water-covered-tree.svg),
+    url(../src/assets/images/inlet.svg);
+  background-position: right bottom, left top, left bottom, center center;
+  background-repeat: no-repeat;
+  height: 95vh;
+}
+
 .nav-item {
+  /* li items */
   /* navbar */
   width: 504px !important;
   height: 33px !important;
@@ -37,7 +51,9 @@ h1 {
   line-height: 21px;
   /* or 58% */
 
-  color: #ff00e5 !important;
+  color: #d82c82d3 !important;
+  /* color: #f82ae3 !important; */
+  /* color: burlywood; */
 }
 
 .App-header-background {
