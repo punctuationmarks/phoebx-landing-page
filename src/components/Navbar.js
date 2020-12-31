@@ -10,7 +10,6 @@ import {
   // NavLink,
 } from "reactstrap";
 import LinkComponent from "./LinkComponent";
-
 export default function NavbarComponent(props) {
   const [collapsed, setCollapsed] = useState(true);
 
