@@ -5,21 +5,14 @@ export default function LinkComponent(props) {
 
   if (externalLink) {
     return (
-      <a style={styles.href} href={link} target="_blank" rel="noreferrer">
+      <a className="nav-item" href={link} target="_blank" rel="noreferrer">
         {text}
       </a>
     );
   }
   return (
-    <a style={styles.href} href={link}>
+    <a className="nav-item" href={link}>
       {text}
     </a>
   );
 }
-
-const styles = {
-  href: {
-    color: "gray",
-    textDecoration: "black underline",
-  },
-};

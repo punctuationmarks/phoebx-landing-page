@@ -1,36 +1,121 @@
 html {
-  width: 100%;
   overflow-x: hidden;
+  width: fit-content;
+  height: 100%;
 }
 
-body{
-  font-family: Georgia, "Times New Roman", Times, serif !important;
-}
-/* .App-logo {  
-  pointer-events: none;
+body {
+  background-color: #e5e5e5 !important; /* these overrides are because of bootstrap and not wantint to make a "shame.css" or some other override*/
+  color: blanchedalmond;
+  font-family: Courier Prime !important;
+  font-style: normal !important;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 8s linear;
+h1 {
+  /* PHOEBX */
+  width: 18rem !important;
+  height: 2.4rem !important;
+  left: 6.25rem !important;
+  top: 3.67rem !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 4rem !important;
+  line-height: 1.875rem !important;
+  color: #1cb636;
+}
+
+h2 {
+  color: #d82c82 !important;
+  white-space: pre-line;
+  font-weight: bold !important;
+  font-size: 3rem !important;
+  font-style: normal !important;
+  line-height: 2rem !important;
+}
+
+h4 {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #d82c82 !important;
+  white-space: pre-line;
+  font-weight: bold !important;
+  font-size: 2.125rem !important;
+  font-style: normal !important;
+  line-height: 1.875rem !important;
+}
+#services {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+#contact {
+  background-image: url(../src/assets/images/animal-head-statue.svg);
+  background-repeat: no-repeat;
+  background-size: cover; /*  looks interesting,  */
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.nav-item {
+  /* li items */
+  /* navbar */
+  font-size: calc(1rem + 2vmin);
+  font-weight: bold !important;
+  color: #d82c82d3 !important;
+}
+
+@media only screen and (min-width: 800px) {
+  .nav-item {
+    /* li items */
+    /* navbar */
+    width: 31.5rem !important;
+    height: 1.9rem !important;
+    left: 27.25rem !important;
+    top: 3.68rem!important;
+    line-height: 1.315rem;
+  }
+  #first-page-background {
+    background-image: url(../src/assets/images/ocean.svg),
+    url(../src/assets/images/inlet.svg),  
+    url(../src/assets/images/water-covered-tree.svg),
+      
+      url(../src/assets/images/tree-overlook.svg);
+    background-position: left top, center bottom, center, center right;
+    background-repeat: no-repeat;
+    height: 95vh;
+  }
+
+  #contact {
+    background-image: url(../src/assets/images/animal-head-statue.svg);
+    background-position: 8rem 1rem;
+    background-repeat: no-repeat;
+    background-size: cover; /*  looks interesting,  */
+    height: 95vh;
+    margin: 0.5rem;
+    padding: 0.5rem;
   }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 799px) {
+  
+  #first-page-background {
+    background-image: url(../src/assets/images/ocean.svg),
+      url(../src/assets/images/inlet.svg), url(../src/assets/images/inlet.svg);
+    background-position: left top, right bottom, right center;
+    background-repeat: no-repeat;
+    /* width: fit-content; */
+    /* height: 95vh; */
   }
-  to {
-    transform: rotate(360deg);
+
+  #contact {
+    background-image: url(../src/assets/images/animal-head-statue.svg);
+    background-position: 1rem 5rem;
+    background-repeat: no-repeat;
+    background-size: cover; /*  looks interesting,  */
+    margin: 0.5rem;
+    padding: 0.5rem;
   }
-} */
-
-
-
-.App-header-background {
-  background: center no-repeat url("./assets/images/green-pink-leaves.jpg");
-  min-height: 85vh;
-  /* color: #2e7c3870; */
-  /* color: rgba(83, 134, 143, 0.685); */
-  /* color: rgb(100, 14, 100); */
+  #catch-phrase{
+    visibility: hidden;
+  }
 }

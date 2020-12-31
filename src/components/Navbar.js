@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import {
+  Button,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -9,34 +9,47 @@ import {
   NavItem,
   // NavLink,
 } from "reactstrap";
+
+import GlitchClip from "react-glitch-effect/core/Clip";
 import LinkComponent from "./LinkComponent";
-// import { ReactComponent as ScanIcon } from "../assets/images/scan.svg";
-import { ReactComponent as Logo } from "../assets/images/phoebx-logo-beta.svg";
+import { ReactComponent as Dots } from "../assets/images/dots.svg";
+
 export default function NavbarComponent(props) {
   const [collapsed, setCollapsed] = useState(true);
-
-  const toggleNavbar = () => setCollapsed(!collapsed);
+  const [glitchActive, setGlitchActive] = useState(true);
+  const toggleNavbar = () => {
+    setCollapsed(!collapsed);
+    setGlitchActive(!glitchActive);
+  };
 
   return (
-    <div>
+    <>
       <Navbar color="faded" light>
-        <NavbarBrand href="/" className="mr-auto">
-          <Logo color="black" alt="logo" /> 
-          {" "} Phoebx
+        <NavbarBrand onClick={toggleNavbar}>
+          <Button>
+            <h1>PHOEBX</h1>
+          </Button>
         </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <GlitchClip onHover={true}>
+          <Dots onClick={toggleNavbar} className="mr-2" />
+        </GlitchClip>
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar style={styles.navItem}>
             <NavItem style={styles.navItem}>
-              <LinkComponent link="#services" text="Services" />
+              <LinkComponent link="#about" text="#about" />
             </NavItem>
             <NavItem style={styles.navItem}>
-              <LinkComponent link="#contact" text="Contact" />
+              <GlitchClip onHover>
+                <LinkComponent link="#services" text="#services" />
+              </GlitchClip>
+            </NavItem>
+            <NavItem style={styles.navItem}>
+              <LinkComponent link="#contact" text="#contact" />
             </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
-    </div>
+    </>
   );
 }
 
