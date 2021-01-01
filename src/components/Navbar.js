@@ -28,7 +28,7 @@ export default function NavbarComponent(props) {
           </Button>
         </NavbarBrand>
         <GlitchClip onHover={true}>
-          <Dots onClick={toggleNavbar} className="mr-2" />
+          <Dots onClick={toggleNavbar} className="mr-2" style={styles.dots} />
         </GlitchClip>
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar style={styles.navItem}>
@@ -55,4 +55,7 @@ const styles = {
     flexDirection: "row",
     margin: "0 1rem 0 0",
   },
+  dots:{
+    color: "black"
+  }
 };
