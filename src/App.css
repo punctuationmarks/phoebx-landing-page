@@ -44,18 +44,15 @@ h4 {
   font-style: normal !important;
   line-height: 1.875rem !important;
 }
+
+h5{
+  color: black;
+}
 #services {
   margin: 0.5rem;
   padding: 0.5rem;
 }
 
-#contact {
-  background-image: url(../src/assets/images/animal-head-statue.svg);
-  background-repeat: no-repeat;
-  background-size: cover; /*  looks interesting,  */
-  margin: 0.5rem;
-  padding: 0.5rem;
-}
 .nav-item {
   /* li items */
   /* navbar */
@@ -98,20 +95,16 @@ h4 {
 @media only screen and (max-width: 799px) {
   #first-page-background {
     background-image: url(../src/assets/images/ocean.svg),
-      url(../src/assets/images/inlet.svg), url(../src/assets/images/inlet.svg);
-    background-position: left top, right bottom, right center;
+      url(../src/assets/images/inlet.svg);
+    background-position: left top, left bottom;
     background-repeat: no-repeat;
-    /* width: fit-content; */
-    /* height: 95vh; */
   }
 
   #contact {
     background-image: url(../src/assets/images/animal-head-statue.svg);
-    background-position: 1rem 5rem;
+    background-position: 0rem 2rem;
     background-repeat: no-repeat;
-    background-size: cover; /*  looks interesting,  */
-    margin: 0.5rem;
-    padding: 0.5rem;
+    background-size: 125%;
   }
   #catch-phrase {
     visibility: hidden;
