@@ -1,9 +1,17 @@
 import React from "react";
-import { Card, CardBody, CardImg, CardSubtitle, CardTitle } from "reactstrap";
+import {
+  Card,
+  CardBody,
+  CardHeader,
+  CardImg,
+  CardSubtitle,
+  CardTitle
+} from "reactstrap";
 import LinkComponent from "./LinkComponent";
 
 export default function CardComponent(props) {
   const {
+    headerText,
     imageSrc,
     imageAlt,
     cardTitle,
@@ -14,6 +22,9 @@ export default function CardComponent(props) {
 
   return (
     <Card style={styles.card}>
+      {!!headerText && (
+        <CardHeader className="card-header-text">{headerText}</CardHeader>
+      )}
       <CardImg top width="100%" src={imageSrc} alt={imageAlt} />
       <CardBody>
         <CardTitle tag="h5">{cardTitle}</CardTitle>

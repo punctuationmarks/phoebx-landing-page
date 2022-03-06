@@ -1,18 +1,44 @@
 import React from "react";
+import GlitchClip from "react-glitch-effect/core/Clip";
 
-export default function Header(props) {
+const luck = Math.random() < 0.738;
+
+const Main = () => {
+  return (
+    <div id="first-page-background" style={styles.images}>
+      <h3 style={styles.catchPhrase} id="catch-phrase">
+        a logical, virtual and physical, tactile creation company
+      </h3>
+      <header style={styles.container}>
+        <h3 style={styles.body}>
+          a logical, virtual and physical, tactile <br /> creation company
+        </h3>
+      </header>
+    </div>
+  );
+};
+
+const NoJS = () => {
+  return (
+    <GlitchClip onHover={true}>
+      <p className="breathing nav-item">turn off jaavscript</p>
+      <p className="breathing nav-item">turn off jaavscript</p>
+      <p className="breathing nav-item">turn off jaavscript</p>
+      <p className="breathing nav-item">turn off jaavscript</p>
+      <Main />
+      <p className="breathing nav-item">turn off jaavscript</p>
+      <p className="breathing nav-item">turn off jaavscript</p>
+      <p className="breathing nav-item">turn off jaavscript</p>
+      <p className="breathing nav-item">turn off jaavscript</p>
+    </GlitchClip>
+  );
+};
+
+export default function Header() {
   return (
     <>
-      <div id="first-page-background" style={styles.images}>
-        <h3 style={styles.catchPhrase} id="catch-phrase">
-          a logical, virtual and physical, tactile creation company
-        </h3>
-        <header style={styles.container}>
-          <h3 style={styles.body}>
-            a logical, virtual and physical, tactile <br /> creation company
-          </h3>
-        </header>
-      </div>
+      {luck && <NoJS />}
+      {!luck && <Main />}
     </>
   );
 }
@@ -31,7 +57,7 @@ const styles = {
     padding: "0 0.25rem",
     textShadow: "2px 2px rgba(0, 0, 0, 0.8)",
   },
-  catchPhrase:{
+  catchPhrase: {
     // color: "black"
-  }
+  },
 };
