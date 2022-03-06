@@ -1,1 +1,3 @@
-Need to rebuild this and throw it on a good linux server to start using custom email domains again
+# WIP
+
+Opening this code in its current state to allow people to see what javascript is being executed on their client. Is not finished, will update in the future. 
