@@ -1,18 +1,16 @@
+import * as React from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import NavBar from "./components/Navbar";
-import ContactForm from "./sections/ContactForm";
-import Footer from "./sections/Footer";
-import Header from "./sections/Header";
-import Services from "./sections/Services";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
-    <>
-      <NavBar />
-      <Header />
-      <Services />
-      <ContactForm />
-      <Footer />
-    </>
+    <div className="App">
+      <h1>Welcome to React Router!</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="about" element={<ContactForm />} /> */}
+      </Routes>
+    </div>
   );
 }

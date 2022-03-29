@@ -1,12 +1,12 @@
 import React from "react";
 import GlitchClip from "react-glitch-effect/core/Clip";
 
-const luck = Math.random() < 0.738;
+const luck = Math.random() > 0.95;
 
 const Main = () => {
   return (
     <div id="first-page-background" style={styles.images}>
-      <h3 style={styles.catchPhrase} id="catch-phrase">
+      <h3 id="catch-phrase">
         a logical, virtual and physical, tactile creation company
       </h3>
       <header style={styles.container}>
@@ -18,18 +18,16 @@ const Main = () => {
   );
 };
 
+const TurnOffJS = () => {
+  return <p className="breathing nav-item">turn off jaavscript</p>;
+};
+
 const NoJS = () => {
   return (
     <GlitchClip onHover={true}>
-      <p className="breathing nav-item">turn off jaavscript</p>
-      <p className="breathing nav-item">turn off jaavscript</p>
-      <p className="breathing nav-item">turn off jaavscript</p>
-      <p className="breathing nav-item">turn off jaavscript</p>
+      <TurnOffJS />
       <Main />
-      <p className="breathing nav-item">turn off jaavscript</p>
-      <p className="breathing nav-item">turn off jaavscript</p>
-      <p className="breathing nav-item">turn off jaavscript</p>
-      <p className="breathing nav-item">turn off jaavscript</p>
+      <TurnOffJS />
     </GlitchClip>
   );
 };
@@ -56,8 +54,5 @@ const styles = {
     fontSize: "calc(1.65rem + 2vmin)",
     padding: "0 0.25rem",
     textShadow: "2px 2px rgba(0, 0, 0, 0.8)",
-  },
-  catchPhrase: {
-    // color: "black"
   },
 };

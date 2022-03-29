@@ -7,12 +7,13 @@ export default class MyForm extends React.Component {
     super(props);
     this.submitForm = this.submitForm.bind(this);
     this.state = {
+      magicNumber: 0,
       status: "",
     };
   }
 
   render() {
-    const { status } = this.state;
+    const { status, magicNumber } = this.state;
     return (
       <Container id="contact" fluid={true} style={styles.container}>
         <Container>
@@ -32,20 +33,25 @@ export default class MyForm extends React.Component {
                 name="message"
                 placeholder="Your message"
               />
+              
             </FormGroup>
             <FormGroup style={styles.submitButtons}>
-              {status === "SUCCESS" ? <></> : <Button>submit the form</Button>}
+            <Button
+                onClick={() => this.setState({ magicNumber: this.state.magicNumber !== 13 ? this.state.magicNumber + 1 : 13 })}
+              >
+                press this button 3 times for good luck: {magicNumber}
+              </Button>
               {status === "ERROR" && (
                 <h4 style={styles.oops}>
                   Ooops! There was an error, wanna try again?
                 </h4>
               )}
-              {status === "SUCCESS" ? (
+              {magicNumber === 3 && status === "SUCCESS" ? (
                 <GlitchClip>
                   <h4>Thanks!</h4>
                 </GlitchClip>
               ) : (
-                <Button>submit the form</Button>
+                <Button disabled={magicNumber !== 3}>submit the form</Button>
               )}
             </FormGroup>
           </Form>
