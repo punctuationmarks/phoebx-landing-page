@@ -18,6 +18,7 @@ export default function CardComponent(props) {
     cardBodyText = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate et, voluptatum architecto eos recusandae eius cupiditate laboriosam laborum sit magnam!",
     buttonText,
     buttonLink,
+    externalLink
   } = props;
 
   return (
@@ -31,8 +32,11 @@ export default function CardComponent(props) {
         <CardSubtitle tag="h6" className="mb-2 text-muted">
           {cardBodyText}
         </CardSubtitle>
-        {buttonText && buttonLink && (
+        {buttonText && buttonLink && externalLink && (
           <LinkComponent link={buttonLink} text={buttonText} externalLink />
+        )}
+        {buttonText && buttonLink && !externalLink && (
+          <LinkComponent link={buttonLink} text={buttonText} />
         )}
       </CardBody>
     </Card>

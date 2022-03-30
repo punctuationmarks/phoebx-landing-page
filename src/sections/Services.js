@@ -4,7 +4,7 @@ import CardComponent from "../components/CardComponent";
 
 export default function Services(props) {
   const technologyText = "logical, virtual";
-  const physicalText = "physical, tactile"
+  const physicalText = "physical, tactile";
 
   return (
     <div id="services">
@@ -18,6 +18,7 @@ export default function Services(props) {
           cardBodyText="We have experience in developing full stack web apps, wrangling and analyzing data, and building IoT devices. We 💖 TypeScript, Python, R, and Rust. If it runs on code, we have an interest in it."
           buttonText="Github"
           buttonLink="https://www.github.com/punctuationmarks"
+          externalLink={true}
         />
         <CardComponent
           headerText={technologyText}
@@ -27,7 +28,9 @@ export default function Services(props) {
         <CardComponent
           headerText={`${technologyText}, ${physicalText}`}
           cardTitle="Personal and intellectual privacy"
-          cardBodyText="Providing secure ways of ensuring your phones and devices aren't listening in and recording your intimate or professional moments."
+          cardBodyText="Researching, developmenting and reviewing ways to protect your individual or company data, through secure ways of reducing snooping and theft from your own devices."
+          buttonText="Lots of text"
+          buttonLink="/tech-reviews"
         />
       </CardDeck>
       <CardDeck className="breathing">
@@ -40,7 +43,7 @@ export default function Services(props) {
         <CardComponent
           headerText={physicalText}
           cardTitle="Screen Printing"
-          cardBodyText="Aiming to reduce the waste from over consumption, we hit the sweet spot where fashion meets environmentally friendly. We take vintage clothes and give them a new life with custom designed screen printing, so you can be good to the climate and also look dress to the nines. Every item is unique, measured properly so you can actually know your size, and custom made by artists, just like you."
+          cardBodyText="Aiming to reduce the waste from over consumption, we hit the sweet spot where fashion meets environmentally friendly. We take vintage clothes and give them a new life with custom designed screen printing, so you can be good to the environment, your wallet, and dress to the nines. Every item is unique, measured properly so you can actually know your size, and custom made by artists, just like you."
         />
       </CardDeck>
     </div>

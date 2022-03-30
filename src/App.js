@@ -2,14 +2,14 @@ import * as React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
+import TechReviews from "./pages/TechReviews";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Welcome to React Router!</h1>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="about" element={<ContactForm />} /> */}
+        <Route path="/tech-reviews" element={<TechReviews />} />
       </Routes>
     </div>
   );

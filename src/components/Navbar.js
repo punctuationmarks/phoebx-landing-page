@@ -33,15 +33,15 @@ export default function NavbarComponent(props) {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar style={styles.navItem}>
             <NavItem style={styles.navItem}>
-              <LinkComponent link="#about" text="#about" />
+              <LinkComponent link="/#about" text="#about" />
             </NavItem>
             <NavItem style={styles.navItem}>
               <GlitchClip onHover>
-                <LinkComponent link="#services" text="#services" />
+                <LinkComponent link="/#services" text="#services" />
               </GlitchClip>
             </NavItem>
             <NavItem style={styles.navItem}>
-              <LinkComponent link="#contact" text="#contact" />
+              <LinkComponent link="/#contact" text="#contact" />
             </NavItem>
           </Nav>
         </Collapse>
