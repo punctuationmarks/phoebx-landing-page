@@ -27,7 +27,7 @@ export default function NavbarComponent(props) {
             <h1>PHOEBX</h1>
           </Button>
         </NavbarBrand>
-        <GlitchClip onHover={true}>
+        <GlitchClip onHover>
           <Dots onClick={toggleNavbar} className="mr-2" style={styles.dots} />
         </GlitchClip>
         <Collapse isOpen={!collapsed} navbar>
