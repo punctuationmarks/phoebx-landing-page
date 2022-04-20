@@ -13,10 +13,8 @@ import LinkComponent from "./LinkComponent";
 
 export default function NavbarComponent(props) {
   const [collapsed, setCollapsed] = useState(true);
-  const [glitchActive, setGlitchActive] = useState(true);
   const toggleNavbar = () => {
     setCollapsed(!collapsed);
-    setGlitchActive(!glitchActive);
   };
 
   return (
@@ -32,13 +30,12 @@ export default function NavbarComponent(props) {
         </GlitchClip>
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar style={styles.navItem}>
+            {/* update about page, or create /#about section */}
             <NavItem style={styles.navItem}>
-              <LinkComponent link="/#about" text="#about" />
+              <LinkComponent link="/#services" text="#about" />
             </NavItem>
             <NavItem style={styles.navItem}>
-              <GlitchClip onHover>
-                <LinkComponent link="/#services" text="#services" />
-              </GlitchClip>
+              <LinkComponent link="/#services" text="#services" />
             </NavItem>
             <NavItem style={styles.navItem}>
               <LinkComponent link="/#contact" text="#contact" />
@@ -55,7 +52,7 @@ const styles = {
     flexDirection: "row",
     margin: "0 1rem 0 0",
   },
-  dots:{
-    color: "black"
-  }
+  dots: {
+    color: "black",
+  },
 };
