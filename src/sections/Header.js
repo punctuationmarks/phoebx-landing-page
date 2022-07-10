@@ -1,5 +1,5 @@
 import React from "react";
-import GlitchClip from 'react-glitch-effect/core/GlitchClip';
+import GlitchClip from "react-glitch-effect/core/Clip";
 
 const luck = Math.random() > 0.95;
 

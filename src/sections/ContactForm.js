@@ -1,5 +1,5 @@
 import React from "react";
-import GlitchClip from 'react-glitch-effect/core/GlitchClip';
+import GlitchClip from "react-glitch-effect/core/Clip";
 import { Button, Container, Form, FormGroup, Input } from "reactstrap";
 
 export default class MyForm extends React.Component {

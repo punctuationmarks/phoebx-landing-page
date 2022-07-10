@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GlitchClip from 'react-glitch-effect/core/GlitchClip';
+import GlitchClip from "react-glitch-effect/core/Clip";
 import {
   Button,
   Collapse,
