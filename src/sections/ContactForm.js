@@ -1,5 +1,5 @@
 import React from "react";
-import GlitchClip from "react-glitch-effect/core/Clip";
+import GlitchClip from 'react-glitch-effect/core/GlitchClip';
 import { Button, Container, Form, FormGroup, Input } from "reactstrap";
 
 export default class MyForm extends React.Component {
@@ -51,7 +51,7 @@ export default class MyForm extends React.Component {
                   <h4>Thanks!</h4>
                 </GlitchClip>
               ) : (
-                <Button disabled={magicNumber !== 3}>submit the form</Button>
+                <Button disabled={magicNumber !== 3}>submit</Button>
               )}
             </FormGroup>
           </Form>
