@@ -3,7 +3,10 @@ import GlitchClip from "react-glitch-effect/core/Clip";
 import { Button, Container, Form, FormGroup, Input } from "reactstrap";
 
 export default class MyForm extends React.Component {
-  constructor(props) {
+  constructor(props: {
+    submitForm: void;
+    state: { magicNumber: number; status: string };
+  }) {
     super(props);
     this.submitForm = this.submitForm.bind(this);
     this.state = {
@@ -33,11 +36,17 @@ export default class MyForm extends React.Component {
                 name="message"
                 placeholder="Your message"
               />
-              
             </FormGroup>
             <FormGroup style={styles.submitButtons}>
-            <Button
-                onClick={() => this.setState({ magicNumber: this.state.magicNumber !== 13 ? this.state.magicNumber + 1 : 13 })}
+              <Button
+                onClick={() =>
+                  this.setState({
+                    magicNumber:
+                      this.state.magicNumber !== 13
+                        ? this.state.magicNumber + 1
+                        : 13,
+                  })
+                }
               >
                 press this button 3 times for good luck: {magicNumber}
               </Button>
@@ -87,7 +96,6 @@ const styles = {
   },
   container: {
     alignItems: "center",
-    // color: "rgb(225, 225, 225)",
     display: "flex",
     minHeight: "10vh",
     padding: "0.4rem 0.4rem",

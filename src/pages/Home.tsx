@@ -1,3 +1,4 @@
+import React from "react";
 import "../App.css";
 import NavBar from "../components/Navbar";
 import ContactForm from "../sections/ContactForm";
@@ -7,12 +8,12 @@ import Services from "../sections/Services";
 
 export default function Home() {
   return (
-    <>
+    <React.Fragment>
       <NavBar />
       <Header />
       <Services />
       <ContactForm />
       <Footer />
-    </>
+    </React.Fragment>
   );
 }

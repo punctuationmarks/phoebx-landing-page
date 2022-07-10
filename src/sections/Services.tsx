@@ -2,7 +2,7 @@ import React from "react";
 import { CardDeck } from "reactstrap";
 import CardComponent from "../components/CardComponent";
 
-export default function Services(props) {
+export default function Services() {
   const technologyText = "logical, virtual";
   const physicalText = "physical, tactile";
 
@@ -28,9 +28,9 @@ export default function Services(props) {
           buttonLink="/tech-reviews"
         />
         <CardComponent
-          headerText={physicalText}
-          cardTitle="Custom Assembled Bicycles"
-          cardBodyText="With over 10 years of riding and building bikes, both professionally and as a hobby, we can find the right style and type of bike for you. We specialize in restoring vintage steel road, conversion, track, and touring bikes."
+          headerText={`${technologyText}, ${physicalText}`}
+          cardTitle="FOSS Hardened Android Phones"
+          cardBodyText="Removing all corperate proprietary code from Android phones, using Graphene or CalyxOS. Also removing unwanted or unused interfaces like Bluetooth, mics, cameras and more."
         />
       </CardDeck>
     </div>

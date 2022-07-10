@@ -13,8 +13,12 @@ const styles = {
     alignItems: "center",
     backgroundColor: "#2e7c3870",
     display: "flex",
+    fontSize: "0.75rem",
     height: "2.5rem",
     justifyContent: "center",
-    fontSize: "0.75rem",
   },
+  body: {
+    margin: "1px",
+    padding: "1px"
+  }
 };

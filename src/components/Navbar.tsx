@@ -18,7 +18,7 @@ export default function NavbarComponent(props) {
   };
 
   return (
-    <>
+    <React.Fragment>
       <Navbar color="faded" light>
         <NavbarBrand onClick={toggleNavbar}>
           <Button>
@@ -43,7 +43,7 @@ export default function NavbarComponent(props) {
           </Nav>
         </Collapse>
       </Navbar>
-    </>
+    </React.Fragment>
   );
 }
 
