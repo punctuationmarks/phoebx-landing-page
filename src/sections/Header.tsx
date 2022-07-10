@@ -5,7 +5,7 @@ const luck = Math.random() > 0.95;
 
 const Main = () => {
   return (
-    <div id="first-page-background" style={styles.images}>
+    <div id="first-page-background">
       <h3 id="catch-phrase">
         a logical, virtual and physical, tactile creation company
       </h3>

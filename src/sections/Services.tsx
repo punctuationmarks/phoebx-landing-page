@@ -2,7 +2,7 @@ import React from "react";
 import { CardDeck } from "reactstrap";
 import CardComponent from "../components/CardComponent";
 
-export default function Services(props) {
+export default function Services() {
   const technologyText = "logical, virtual";
   const physicalText = "physical, tactile";
 
@@ -28,9 +28,13 @@ export default function Services(props) {
           buttonLink="/tech-reviews"
         />
         <CardComponent
-          headerText={physicalText}
-          cardTitle="Custom Assembled Bicycles"
-          cardBodyText="With over 10 years of riding and building bikes, both professionally and as a hobby, we can find the right style and type of bike for you. We specialize in restoring vintage steel road, conversion, track, and touring bikes."
+          headerText={`${technologyText}, ${physicalText}`}
+          cardTitle="FOSS Hardened Android phones"
+          cardBodyText="Removing proprietary code from Android phones with GrapheneOS or CalyxOS, to have a big-tech-free phone from surveillance capitalism. Removing unused or unwanted interfaces such as Bluetooth receivers, mics, speakers, cameras."
+          // TODO:
+          // Add a link to a page about these services and OSes
+          // https://grapheneos.org/
+          // https://calyxos.org/
         />
       </CardDeck>
     </div>
