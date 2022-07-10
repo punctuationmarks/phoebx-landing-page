@@ -38,6 +38,9 @@ export default function NavbarComponent() {
               <LinkComponent link="/#services" text="#services" />
             </NavItem>
             <NavItem style={styles.navItem}>
+              <LinkComponent link="/tech-reviews" text="#reviews" />
+            </NavItem>
+            <NavItem style={styles.navItem}>
               <LinkComponent link="/#contact" text="#contact" />
             </NavItem>
           </Nav>

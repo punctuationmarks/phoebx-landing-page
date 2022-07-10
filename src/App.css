@@ -47,9 +47,28 @@ h4 {
 h5 {
   color: black;
 }
-#services {
-  margin: 0.5rem;
+
+.blog-container {
   padding: 0.5rem;
+  margin: 0.75rem 0.1rem;
+}
+
+.breathing {
+  padding: 0.1rem;
+  margin: 0.01rem;
+}
+
+.card-header-text {
+  color: black;
+  font-family: Courier Prime;
+  font-weight: 600;
+  padding-left: 5rem;
+}
+
+.markdown {
+  color: black;
+  font-family: Courier Prime;
+  margin: 1.5rem 1rem;
 }
 
 .nav-item {
@@ -60,16 +79,9 @@ h5 {
   color: #d82c82d3 !important;
 }
 
-.card-header-text {
-  color: black;
-  font-family: Courier Prime;
-  font-weight: 600;
-  padding-left: 5rem;
-}
-
-.breathing {
-  padding: 0.1rem;
-  margin: 0.01rem;
+.services {
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
 @media only screen and (min-width: 800px) {
