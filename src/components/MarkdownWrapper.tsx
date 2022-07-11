@@ -12,12 +12,12 @@ const MarkdownWrapper = (args: { file: string }) => {
         fetch(res.default)
           .then((res) => res.text())
           .then((res) => setPost(res))
-          .catch((err) => console.log(err));
       })
       .catch((err) => console.log(err));
   });
 
   return (
+    // would be nice to have these in an accordian style
     <div className="markdown">
       <Markdown>{post}</Markdown>
     </div>

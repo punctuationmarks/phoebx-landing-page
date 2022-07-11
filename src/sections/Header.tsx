@@ -6,9 +6,9 @@ const luck = Math.random() > 0.95;
 const Main = () => {
   return (
     <div id="first-page-background">
-      <h3 id="catch-phrase">
+      {/* <h3 id="catch-phrase">
         a logical, virtual and physical, tactile creation company
-      </h3>
+      </h3> */}
       <header style={styles.container}>
         <h3 style={styles.body}>
           a logical, virtual and physical, tactile <br /> creation company
