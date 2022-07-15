@@ -87,7 +87,7 @@ h5 {
 .nav-item {
   /* li items */
   /* navbar */
-  font-size: calc(1rem + 2vmin);
+  font-size: calc(0.7rem + 2vmin);
   font-weight: bold !important;
   color: #d82c82d3 !important;
 }
@@ -97,7 +97,7 @@ h5 {
   padding: 0.5rem;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .nav-item {
     /* li items */
     /* navbar */
@@ -128,7 +128,16 @@ h5 {
   }
 }
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 999px) {
+  .nav-item {
+    /* li items */
+    /* navbar */
+    width: 10.5rem !important;
+    height: 1.9rem !important;
+    left: 7.25rem !important;
+    top: 2rem !important;
+    line-height: 1.315rem;
+  }
   #first-page-background {
     background-image: url(../src/assets/images/ocean.svg),
       url(../src/assets/images/inlet.svg);

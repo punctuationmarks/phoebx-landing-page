@@ -53,7 +53,7 @@ export default function NavbarComponent() {
 const styles = {
   navItem: {
     flexDirection: "row",
-    margin: "0 1rem 0 0",
+    // margin: "0 0.5rem 0 0",
   } as React.CSSProperties
   ,
   dots: {
