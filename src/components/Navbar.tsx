@@ -11,7 +11,7 @@ import {
 import { ReactComponent as Dots } from "../assets/images/dots.svg";
 import LinkComponent from "./LinkComponent";
 
-export default function NavbarComponent() {
+const NavbarComponent = ()  => {
   const [collapsed, setCollapsed] = useState(true);
   const toggleNavbar = () => {
     setCollapsed(!collapsed);
@@ -26,21 +26,21 @@ export default function NavbarComponent() {
           </Button>
         </NavbarBrand>
         <GlitchClip onHover>
-          <Dots onClick={toggleNavbar} className="mr-2" style={styles.dots} />
+          <Dots onClick={toggleNavbar} className="dots" />
         </GlitchClip>
         <Collapse isOpen={!collapsed} navbar>
-          <Nav navbar style={styles.navItem}>
+          <Nav navbar className="nav-item">
             {/* update about page, or create /#about section */}
-            <NavItem style={styles.navItem}>
+            <NavItem className="nav-item">
               <LinkComponent link="/#services" text="#about" />
             </NavItem>
-            <NavItem style={styles.navItem}>
+            <NavItem className="nav-item">
               <LinkComponent link="/#services" text="#services" />
             </NavItem>
-            <NavItem style={styles.navItem}>
+            <NavItem className="nav-item">
               <LinkComponent link="/tech-reviews" text="#reviews" />
             </NavItem>
-            <NavItem style={styles.navItem}>
+            <NavItem className="nav-item">
               <LinkComponent link="/#contact" text="#contact" />
             </NavItem>
           </Nav>
@@ -50,13 +50,7 @@ export default function NavbarComponent() {
   );
 }
 
-const styles = {
-  navItem: {
-    flexDirection: "row",
-    // margin: "0 0.5rem 0 0",
-  } as React.CSSProperties
-  ,
-  dots: {
-    color: "black",
-  },
-};
+// would be cool to have the navigation at the bottom of the screen if on mobile
+// better yet, have a button that switches it from top to bottom
+
+export default NavbarComponent;
