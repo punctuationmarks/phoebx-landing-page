@@ -13,6 +13,10 @@ body {
   width: 100vw;
 }
 
+h1, h2, h3, h4, h5 {
+  margin: 0.7rem;
+}
+
 h1 {
   width: 18rem !important;
   height: 2.4rem !important;
@@ -34,6 +38,15 @@ h2 {
   line-height: 2rem !important;
 }
 
+h3 {
+  font-weight: bold !important;
+  font-size: 2.5rem !important;
+  font-style: normal !important;
+  line-height: 2rem !important;
+  white-space: pre-line;
+  
+}
+
 h4 {
   background-color: rgba(255, 255, 255, 0.8);
   color: #d82c82 !important;
@@ -47,17 +60,15 @@ h4 {
 h5 {
   color: black;
 }
-#services {
-  margin: 0.5rem;
+
+.blog-container {
   padding: 0.5rem;
+  margin: 0.75rem 0.1rem;
 }
 
-.nav-item {
-  /* li items */
-  /* navbar */
-  font-size: calc(1rem + 2vmin);
-  font-weight: bold !important;
-  color: #d82c82d3 !important;
+.breathing {
+  padding: 0.1rem;
+  margin: 0.01rem;
 }
 
 .card-header-text {
@@ -67,12 +78,26 @@ h5 {
   padding-left: 5rem;
 }
 
-.breathing {
-  padding: 0.1rem;
-  margin: 0.01rem;
+.markdown {
+  color: black;
+  font-family: Courier Prime;
+  margin: 1.5rem 1rem;
 }
 
-@media only screen and (min-width: 800px) {
+.nav-item {
+  /* li items */
+  /* navbar */
+  font-size: calc(0.7rem + 2vmin);
+  font-weight: bold !important;
+  color: #d82c82d3 !important;
+}
+
+.services {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+@media only screen and (min-width: 1000px) {
   .nav-item {
     /* li items */
     /* navbar */
@@ -103,7 +128,16 @@ h5 {
   }
 }
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 999px) {
+  .nav-item {
+    /* li items */
+    /* navbar */
+    width: 10.5rem !important;
+    height: 1.9rem !important;
+    left: 7.25rem !important;
+    top: 2rem !important;
+    line-height: 1.315rem;
+  }
   #first-page-background {
     background-image: url(../src/assets/images/ocean.svg),
       url(../src/assets/images/inlet.svg);

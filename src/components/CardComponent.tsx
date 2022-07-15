@@ -9,7 +9,18 @@ import {
 } from "reactstrap";
 import LinkComponent from "./LinkComponent";
 
-export default function CardComponent(props) {
+interface ICardComponentProps {
+  headerText: string;
+  imageSrc?: string;
+  imageAlt?: string;
+  cardTitle: string;
+  cardBodyText?:string;
+  buttonText?: string;
+  buttonLink?: string;
+  externalLink?: boolean;
+}
+
+export default function CardComponent(props: ICardComponentProps) {
   const {
     headerText,
     imageSrc,
@@ -18,7 +29,7 @@ export default function CardComponent(props) {
     cardBodyText = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate et, voluptatum architecto eos recusandae eius cupiditate laboriosam laborum sit magnam!",
     buttonText,
     buttonLink,
-    externalLink
+    externalLink,
   } = props;
 
   return (

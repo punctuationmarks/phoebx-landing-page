@@ -1,3 +1,4 @@
+import React from "react";
 import "../App.css";
 import NavBar from "../components/Navbar";
 import ContactForm from "../sections/ContactForm";

@@ -11,7 +11,7 @@ import {
 import { ReactComponent as Dots } from "../assets/images/dots.svg";
 import LinkComponent from "./LinkComponent";
 
-export default function NavbarComponent(props) {
+export default function NavbarComponent() {
   const [collapsed, setCollapsed] = useState(true);
   const toggleNavbar = () => {
     setCollapsed(!collapsed);
@@ -38,6 +38,9 @@ export default function NavbarComponent(props) {
               <LinkComponent link="/#services" text="#services" />
             </NavItem>
             <NavItem style={styles.navItem}>
+              <LinkComponent link="/tech-reviews" text="#reviews" />
+            </NavItem>
+            <NavItem style={styles.navItem}>
               <LinkComponent link="/#contact" text="#contact" />
             </NavItem>
           </Nav>
@@ -50,8 +53,9 @@ export default function NavbarComponent(props) {
 const styles = {
   navItem: {
     flexDirection: "row",
-    margin: "0 1rem 0 0",
-  },
+    // margin: "0 0.5rem 0 0",
+  } as React.CSSProperties
+  ,
   dots: {
     color: "black",
   },
