@@ -51,7 +51,7 @@ Just an opinion: If it's proprietary software, then it’s most likely spyware t
 ## LANGUAGES
 
 ### BASH
-Borne Again Shell, you'll never die since no one can read you.
+Borne Again Shell, you'll never die since no one can read you. All jokes aside, I think BASH scripting is one of the more useful skills to develop. It is a default on most Linux machines and allows for quick interaction with near every command line tool. Plus, scripting in Python or some other scripting langugae requires it to be installed on the machine. The other alternative is coding the cli in Rust or C++ and then passing the binary executable along, which is the prefered solution, imo. 
 
 ### R
 - with Tidyverse

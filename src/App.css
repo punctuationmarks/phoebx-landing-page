@@ -13,7 +13,11 @@ body {
   width: 100vw;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0.7rem;
 }
 
@@ -44,7 +48,7 @@ h3 {
   font-style: normal !important;
   line-height: 2rem !important;
   white-space: pre-line;
-  
+
 }
 
 h4 {
@@ -60,6 +64,12 @@ h4 {
 h5 {
   color: black;
 }
+
+/* need to verify this actually works on all browsers */
+.noscript {
+  color: black !important;
+}
+
 
 .blog-container {
   padding: 0.5rem;
@@ -78,6 +88,10 @@ h5 {
   padding-left: 5rem;
 }
 
+.dots {
+  color: black;
+}
+
 .markdown {
   color: black;
   font-family: Courier Prime;
@@ -85,11 +99,16 @@ h5 {
 }
 
 .nav-item {
-  /* li items */
-  /* navbar */
+  /* navbar li items */
+  color: #d82c82d3 !important;
+  flex-direction: row;
   font-size: calc(0.7rem + 2vmin);
   font-weight: bold !important;
-  color: #d82c82d3 !important;
+  height: 1rem !important;
+  line-height: 1.315rem;
+  padding: 0.1rem;
+  margin: 0.2rem;
+  width: 10rem !important;
 }
 
 .services {
@@ -98,15 +117,6 @@ h5 {
 }
 
 @media only screen and (min-width: 1000px) {
-  .nav-item {
-    /* li items */
-    /* navbar */
-    width: 31.5rem !important;
-    height: 1.9rem !important;
-    left: 27.25rem !important;
-    top: 3.68rem !important;
-    line-height: 1.315rem;
-  }
   #first-page-background {
     background-image: url(../src/assets/images/ocean.svg),
       url(../src/assets/images/inlet.svg),
@@ -129,20 +139,25 @@ h5 {
 }
 
 @media only screen and (max-width: 999px) {
-  .nav-item {
-    /* li items */
-    /* navbar */
-    width: 10.5rem !important;
-    height: 1.9rem !important;
-    left: 7.25rem !important;
-    top: 2rem !important;
-    line-height: 1.315rem;
-  }
   #first-page-background {
     background-image: url(../src/assets/images/ocean.svg),
       url(../src/assets/images/inlet.svg);
     background-position: left top, left bottom;
     background-repeat: no-repeat;
+  }
+
+
+  .nav-item {
+    /* navbar li items */
+    color: #d82c82d3 !important;
+    flex-direction: row;
+    font-size: calc(0.5rem + 2vmin);
+    font-weight: bold !important;
+    height: 0.5rem !important;
+    line-height: 1.315rem;
+    padding: 0.1rem;
+    margin: 0.3rem;
+    width: 5rem !important;
   }
 
   #contact {
@@ -151,6 +166,7 @@ h5 {
     background-repeat: no-repeat;
     background-size: 125%;
   }
+
   #catch-phrase {
     visibility: hidden;
   }
