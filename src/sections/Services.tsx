@@ -7,7 +7,7 @@ export default function Services() {
   const physicalText = "physical, tactile";
 
   return (
-    <div className="services">
+    <div id="services" className="services">
       <h2 style={styles.header}>
         {/* We like to get our hands dirty in many different fields */}
       </h2>
