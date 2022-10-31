@@ -17,7 +17,7 @@ const TechReviews = () => {
     <div className="blog-container">
       
       <MarkdownWrapper file="software.md" />
-      {/* <MarkdownWrapper file="protocols.md" /> */}
+      <MarkdownWrapper file="protocols.md" />
       <MarkdownWrapper file="hardware.md" />
     </div>
     </>
