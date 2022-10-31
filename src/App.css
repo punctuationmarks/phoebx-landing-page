@@ -65,6 +65,11 @@ h5 {
   color: black;
 }
 
+p {
+  color: black !important;
+}
+
+
 /* need to verify this actually works on all browsers */
 .noscript {
   color: black !important;

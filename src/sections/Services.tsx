@@ -7,7 +7,12 @@ export default function Services() {
   const physicalText = "physical, tactile";
 
   return (
+
+
     <Fragment>
+      <div id="services" className="services">
+        <p>Just a heads up, this site is a work in progress.</p>
+      </div>
       <div id="services" className="services">
         <CardDeck className="breathing">
           <CardComponent
