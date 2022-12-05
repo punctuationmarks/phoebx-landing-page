@@ -2,8 +2,13 @@ import React from "react";
 import GlitchClip from "react-glitch-effect/core/Clip";
 import { Button, Container, Form, FormGroup, Input } from "reactstrap";
 
+interface IContactFormProps {
+  state: { status: string; magicNumber: number };
+  submitForm: () => void;
+}
+
 export default class MyForm extends React.Component {
-  constructor(props) {
+  constructor(props: IContactFormProps | Readonly<IContactFormProps>) {
     super(props);
     this.submitForm = this.submitForm.bind(this);
     this.state = {
@@ -33,11 +38,17 @@ export default class MyForm extends React.Component {
                 name="message"
                 placeholder="Your message"
               />
-              
             </FormGroup>
             <FormGroup style={styles.submitButtons}>
-            <Button
-                onClick={() => this.setState({ magicNumber: this.state.magicNumber !== 13 ? this.state.magicNumber + 1 : 13 })}
+              <Button
+                onClick={() =>
+                  this.setState({
+                    magicNumber:
+                      this.state.magicNumber !== 13
+                        ? this.state.magicNumber + 1
+                        : 13,
+                  })
+                }
               >
                 press this button 3 times for good luck: {magicNumber}
               </Button>
@@ -60,7 +71,7 @@ export default class MyForm extends React.Component {
     );
   }
 
-  submitForm(ev) {
+  submitForm(ev: { preventDefault: () => void; target: any; }) {
     ev.preventDefault();
     const form = ev.target;
     const data = new FormData(form);
@@ -82,12 +93,10 @@ export default class MyForm extends React.Component {
 
 const styles = {
   header: {
-    alignItems: "center",
     textAlign: "center",
-  },
+  } as React.CSSProperties,
   container: {
     alignItems: "center",
-    // color: "rgb(225, 225, 225)",
     display: "flex",
     minHeight: "10vh",
     padding: "0.4rem 0.4rem",
@@ -101,7 +110,7 @@ const styles = {
     flexDirection: "column",
     justifyContent: "center",
     padding: "0 0.25rem",
-  },
+  } as React.CSSProperties,
   submitButtons: {
     display: "flex",
     justifyContent: "space-between",
