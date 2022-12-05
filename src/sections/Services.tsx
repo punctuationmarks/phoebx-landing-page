@@ -11,7 +11,6 @@ export default function Services() {
 
     <Fragment>
       <div id="services" className="services">
-        <p>Just a heads up, this site is a work in progress.</p>
       </div>
       <div id="services" className="services">
         <CardDeck className="breathing">
@@ -35,21 +34,26 @@ export default function Services() {
       <div className="services">
         <CardDeck className="breathing">
           <CardComponent
-            headerText={technologyText}
-            cardTitle="Developer"
-            cardBodyText="Do you need a small app to do that one very specific task and you can't find anything on the market? Reach out! We have a broad range of experience in GUI full stack development, data analytics and even a little machine learning."
-            buttonText="Contact us!"
-            buttonLink="#contact"
-            externalLink={false}
-          />
-          <CardComponent
-            headerText={`${technologyText}; ${physicalText}`}
+            headerText={`${technologyText}`}
             cardTitle="FOSS Hardened Android phones"
             cardBodyText="Removing proprietary code from Android phones with GrapheneOS or CalyxOS, to have a big-tech-free phone from surveillance capitalism. Removing unused or unwanted interfaces such as Bluetooth receivers, mics, speakers, cameras."
           // TODO:
           // Add a link to a page about these services and OSes
           // https://grapheneos.org/
           // https://calyxos.org/
+          />
+          <CardComponent
+            headerText={`${technologyText}; ${physicalText}`}
+            cardTitle="Computer and phone repair and modification"
+            cardBodyText="Squeezing the life out old devices and modifying machines to do what you need them to do and nothing more."
+          />
+                    <CardComponent
+            headerText={technologyText}
+            cardTitle="Developer"
+            cardBodyText="Do you need a small app to do that one very specific task and you can't find anything on the market? Reach out! We have a broad range of experience in GUI full stack development, data analytics and even a little machine learning."
+            buttonText="Contact us!"
+            buttonLink="#contact"
+            externalLink={false}
           />
         </CardDeck>
       </div>
